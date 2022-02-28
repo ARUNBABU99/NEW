@@ -5,7 +5,7 @@
 <style>
 input[type=text] {
   width: 20%;
-  padding: 5px 5px;
+  padding: 5px 5=px;
   margin: 5px 0;
   color: #588c7e;
   box-sizing: border-box;
@@ -17,6 +17,7 @@ color: #588c7e;
 font-family: monospace;
 font-size: 25px;
 text-align: left;
+margin: 20px 0PX;
 }
 th {
 background-color: #588c7e;
@@ -34,6 +35,7 @@ tr:nth-child(even) {background-color: #f2f2f2}
             <br>
             <input type=submit name="s">
             <?php
+            
             
            
                 
@@ -64,9 +66,13 @@ echo "<tr><td>" . $row["id"]. "</td><td>" . $row["name"] . "</td><td>"
 . $row["phone"]. "</td></tr>";
 }
 echo "</table>";
-} else { echo "0 results"; }
+} else  { echo "0 results"; }
 $conn->close();
 ?>
+<a href="addemp.PHP">CLICK HERE TO ADD A EMPLOYEE</a> 
+<br>
+<a href="editemp.PHP">CLICK HERE TO EDIT PREVIOUS EMPLOYEE</a> 
+
 </table>
 </body>
 </html>
