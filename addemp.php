@@ -4,6 +4,7 @@
 
  <form action="" method="post" name="form1">
 <table width="25%" border="0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
  <tbody><tr> 
 <td>ID</td>
 <td><input type="text" name="pname"></td>
