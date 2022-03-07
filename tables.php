@@ -3,6 +3,7 @@
 <head>
 <title>Table with database</title>
 <style>
+  
 input[type=text] {
   width: 20%;
   padding: 5px 5=px;
@@ -10,6 +11,13 @@ input[type=text] {
   color: #588c7e;
   box-sizing: border-box;
 }
+
+background-image{
+  opacity: 0.2
+}
+
+
+
 table {
 border-collapse: collapse;
 width: 100%;
@@ -23,10 +31,16 @@ th {
 background-color: #588c7e;
 color: white;
 }
-tr:nth-child(even) {background-color: #f2f2f2}
+tr:nth-child(even) {background-color: #f2f2f2}  
+body {
+    background-image: url("desert.jpg");
+}
+
 </style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+
 
 <form action="" method="post">
             ID:
@@ -66,12 +80,13 @@ echo "<tr><td>" . $row["id"]. "</td><td>" . $row["name"] . "</td><td>"
 . $row["phone"]. "</td></tr>";
 }
 echo "</table>";
-} else  { echo "0 results"; }
+}
+
 $conn->close();
 ?>
 <a href="addemp.PHP">CLICK HERE TO ADD A EMPLOYEE</a> 
 <br>
-<a href="editemp.PHP">CLICK HERE TO EDIT PREVIOUS EMPLOYEE</a> 
+<a href="index.PHP">CLICK HERE TO EDIT PREVIOUS EMPLOYEE</a> 
 
 </table>
 </body>
